@@ -1,0 +1,1184 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+  }
+  header{
+    display: flex;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* 白色で透明度50% */
+    position: fixed;
+    z-index: 1000; /* 他のコンテンツより上に表示 */
+  }
+
+
+.nav1 {
+    display: flex;
+    align-items: center; /* 縦方向中央揃え */
+    background-color: rgba(255, 255, 255, 0.5); /* 白色で透明度50% */
+    width: 100%;
+    padding: 28px 0px; /* ヘッダーの内側余白 */
+    justify-content: center;
+}
+
+.toiawase{
+    background-color: rgba(251, 54, 64, 0.7);
+    border-radius: 15px;
+    color: white;
+}
+
+header img {
+    margin-right: auto; /* 画像を左に寄せる */
+    max-height: 50px; /* 必要に応じて画像サイズを調整 */
+    width: auto;
+    margin-top: 15px;
+}
+h1{
+    background-color: rgba(255, 255, 255, 0.5); /* 白色で透明度50% */
+}
+
+header ul {
+    display: flex;
+    justify-content: center; /* リンクを中央揃え */
+    flex: 1; /* ULを幅いっぱいに広げる */
+    margin: 0;
+}
+
+header ul li {
+    margin: 0 10px; /* 各リンクの間隔を調整 */
+}
+
+header ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px; /* 内側余白を追加 */
+    text-align: center; /* テキストを中央揃え */
+}
+
+.mainvisual img {
+    width: 100%;
+    position: relative;
+    left: 0;   
+    margin-top: 10px;
+    margin-bottom: -7px;
+}
+.low-contrast {
+    filter: contrast(85%); /* コントラストを70%に減少 */
+} 
+
+.mainvisual h2 {
+    position: absolute;
+    right: 8%;
+    bottom: 30%;
+    color: white;
+    font-size: 2.7rem;
+    z-index: 1;
+}
+
+.komarigoto{
+    font-size: 32px;
+    padding-top: 100px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+/* 親要素にFlexboxを適用 */
+.first-container{
+  background-color: #5C95FF;
+  background-color:  rgba(92, 149, 255, 0.1);
+  padding-bottom: 80px;
+}
+.container {
+    padding-top: 48px;
+    display: flex;
+    justify-content: space-between; /* 各カラム間のスペースを均等に */
+    gap: 20px; /* カラム間の隙間 */
+    flex-wrap: wrap; /* 画面幅が狭くなると、カラムが折り返される */
+}
+
+/* 各カラムのスタイル */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+/* 画像のスタイル */
+.container > div img {
+    width: 100%; /* 画像をカラムの幅に合わせて調整 */
+    max-width: 340px; /* 画像の最大幅を設定 */
+    height: auto; /* 高さ自動調整 */
+}
+
+/* テキストのスタイル */
+.container{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+
+}
+
+.Features {
+    position: relative; /* 親要素にrelativeを設定 */
+    text-align: center; /* テキストの中央揃え */
+    margin-top: 150px;
+}
+
+
+  /* 横に動く画像 */
+  /*.Features img {
+    position: absolute;
+    left: 50%; /* 初期位置を左端に設定 
+    animation: slide 30s infinite ; アニメーションの設定 
+  } 
+  
+  @keyframes slide {
+    0% {
+      left: 0;
+    }
+    100% {
+      right: 0;
+    }
+  }
+    */
+
+.Features h3 {
+     font-size: 32px;
+}
+
+.Fcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "in1 in1"
+                          "in2 in2"
+                          "in3 in3";
+}
+.Fcontainer1{
+    grid-area: in1;
+    margin-top: 60px;
+    margin-left: 19%;
+    display: flex;
+    gap: 100px;
+    text-align: center;
+}
+.sankakanou{
+    width: 35%;
+    margin-top: 50px;
+    h4{
+        padding-bottom: 20px;
+    }
+}
+.Fcontainer2{
+    grid-area: in2;
+    margin-top: 60px;
+    margin-left: 19%;
+    display: flex;
+    gap: 100px;
+    text-align: center;
+}
+.otoku{
+    width: 35%;
+    margin-top: 50px;
+    h4{
+        padding-bottom: 20px;
+    }
+}
+.Fcontainer3{
+    grid-area: in3;
+    margin-top: 60px;
+    margin-left: 19%;
+    display: flex;
+    gap: 100px;
+    text-align: center;
+}
+.anshin{
+    width: 35%;
+    margin-top: 50px;
+    h4{
+        padding-bottom: 20px;
+    }
+}
+
+
+
+.kinou {
+    position: relative; /* 親要素にrelativeを設定 */
+    text-align: center; /* テキストの中央揃え */
+    margin-top: 120px;
+    padding-top: 70px;
+}
+
+/*.kinou img {
+  position: absolute;
+  right: 0;  初期位置を右端に設定
+  animation: slide 30s infinite ;  アニメーションの設定 
+}
+
+@keyframes slide {
+  0% {
+    right: 0;
+  }
+  100% {
+    left: 0;
+  }
+}*/
+
+
+.kinou h3 {
+     font-size: 32px;
+}
+
+/*-----------------変更するべき-------------------------------*/
+/* 各セクションを画面全体の高さにする */
+.eizou, .logohaichi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sankasya{
+  margin-right: 9%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* 初期状態では全ての画像を非表示に */
+.feature-image {
+    display: none;
+    width: 300px;  /* 任意の画像サイズ */
+    height: auto;
+}
+
+/* 画像が表示される状態 */
+.active img {
+    display: block;
+}
+
+/* 文章と画像を縦並び */
+.column {
+    display: grid;
+    width: 50%;
+}
+
+
+/*----------------------------------------------------*/
+
+
+
+
+.Security {
+    position: relative; /* 親要素にrelativeを設定 */
+    text-align: center; /* テキストの中央揃え */
+    margin-top: 150px;
+}
+
+/*.simg{
+  position: absolute;
+  right: 0; 初期位置を右端に設定 
+  animation: slide 20s infinite ; アニメーションの設定 
+}
+
+@keyframes slide {
+  0% {
+    right: 0;
+  }
+  100% {
+    left: 0;
+  }
+}*/
+
+
+.Security h3 {
+   font-size: 32px;
+}
+
+
+.Scontainer1{
+  padding-top: 5%;
+  margin: 0 auto;
+  width: 61%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:"H4 img1"
+                      "P1 img1";
+  gap: 10%;
+  .h4dayo{
+    grid-area: H4;
+    padding-top: 25%;
+  }
+  .P1{
+    grid-area: P1;
+    padding-bottom: 30%;
+  }
+  img{
+    grid-area: img1;
+  }
+}
+.Scontainer2{
+  padding-top: 10%;
+  margin: 0 auto;
+  bottom: 0;
+  width: 61%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:"h4 img2"
+                      "P2 img2";
+  gap: 10%;
+  .h4{
+    grid-area: h4;
+    padding-top: 25%;
+  }
+  .P2{
+    grid-area: P2;
+    padding-bottom: 30%;
+  }
+  .img2{
+    grid-area: img2;
+  }
+}
+
+
+.Comparison {
+    position: relative; /* 親要素にrelativeを設定 */
+    text-align: center; /* テキストの中央揃え */
+    margin-top: 150px;
+    padding-top: 80px;
+}
+
+/*.Comparison img {
+  position: absolute;
+  left: 0;  初期位置を左端に設定 
+  animation: slide 25s infinite ;  アニメーションの設定 
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  100% {
+    right: 0;
+  }
+}*/
+.Comparison h3 {
+     font-size: 32px;
+}
+
+.table {
+  text-align: center;
+  h2 {
+      padding-top: 80px;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  margin: 80px auto;
+  width: 70%;
+  table-layout: fixed;
+  border: 2px solid;
+  transition: all 0.3s ease;
+}
+
+table thead tr {
+   background-color: rgba(146, 255, 37, 0.4);
+  color: #353535;
+}
+
+table tr {
+  background-color: #fff;
+}
+
+table tr:last-child {
+  border: none;
+}
+
+table th, table td {
+  padding: 0.8em 0.2em;
+  border-right: 2px solid #353535;
+  font-size: 1em;
+  line-height: 2.0em;
+  border-top: #353535 2px solid;
+}
+
+table th {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+table tbody th {
+  background-color: #f9f9f9;
+  border-right: 2px solid #353535;
+  text-align: center;
+}
+
+table tbody td {
+  text-align: center;
+}
+
+table .blue-BK {
+  background: #5C95FF;
+  color: #fff;
+}
+
+.price {
+  color: #353535;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.price span {
+  font-size: 0.8em;
+}
+
+.blue-txt {
+  color: #0077B6;
+}
+
+.border-row {
+  border-bottom: 3px solid #50535d;
+}
+
+.Reason {
+    position: relative; /* 親要素にrelativeを設定 */
+    text-align: center; /* テキストの中央揃え */
+    margin-top: 150px;
+    padding-top: 80px;
+}
+
+/*.Reason img {
+    position: absolute;
+    top: 50%;
+    left: 100%; 初期位置: コンテナの右端 
+    transform: translateY(-50%); 画像を垂直中央揃え 
+    animation: slide 15s linear infinite;  アニメーションを適用 
+  }
+
+  アニメーション定義 
+  @keyframes slide {
+    0% {
+      transform: translateY(-80%) translateX(0); 
+    }
+    100% {
+      transform: translateY(-80%) translateX(-270%); 
+    }
+  }*/
+
+
+.Reason h3 {
+     font-size: 32px;
+}
+
+.riyuu-container {
+  margin: 0 auto;
+}
+
+.riyuu{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+    -webkit-overflow-scrolling: touch;
+}
+.sanka{
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+    width: 65%;
+    text-align: justify;
+}
+
+
+
+
+
+.Usage {
+    position: relative; /* 親要素にrelativeを設定 */
+    text-align: center; /* テキストの中央揃え */
+    margin-top: 150px;
+    padding-top: 100px;
+}
+
+/*.Usage img {
+    position: absolute;
+    top: 50%;
+    left: -150px; 初期位置: コンテナの左端外 
+    transform: translateY(-50%);  画像を垂直中央揃え 
+    animation: move-right 15s linear infinite;  アニメーションを適用 
+    max-width: 100%;  画像の最大幅を制限 
+    height: auto;  高さは幅に比例して自動調整 
+}
+
+アニメーション定義 
+@keyframes move-right {
+    0% {
+        transform: translateY(-50%) translateX(-100%); 
+    }
+    100% {
+        transform: translateY(-50%) translateX(100%); 
+    }
+}*/
+.Usage h3 {
+     font-size: 32px;
+}
+
+/* Stepupの全体レイアウト */
+.Stepup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Stepupの全体レイアウト */
+.Stepup {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* 各ステップのレイアウト */
+.Stepup > div {
+    display: flex;
+    align-items: center; /* 画像とテキストを中央揃え */
+    justify-content: flex-start; /* 左揃えにする */
+    margin: 30px 0;
+    width: 25%; /* 幅を100%に設定 */
+}
+
+/* 画像を同じサイズに揃える */
+.Stepup > div img {
+    width: 80px; /* 画像の幅を統一 */
+    height: auto; /* 高さは自動で調整 */
+    margin-right: 20px; /* 画像とテキストの間にスペース */
+}
+
+/* h4とpを縦並びに */
+.Stepup > div h4,
+.Stepup > div p {
+    margin: 5px 0;
+}
+
+/* 三角形の画像のスタイル */
+.sankaku {
+    width: 70px; /* 三角形画像のサイズ */
+    margin-top: 10px;
+}
+
+
+.Contact {
+    position: relative; /* 親要素にrelativeを設定 */
+    text-align: center; /* テキストの中央揃え */
+    padding-top: 80px;
+}
+
+/*.Contact img {
+    position: absolute;
+    top: 50%;
+    left: 100%; 
+    transform: translateY(-50%); 
+    animation: slide 15s linear infinite; 
+  }
+
+   アニメーション定義 
+  @keyframes slide {
+    0% {
+      transform: translateY(-80%) translateX(0); 
+    }
+    100% {
+      transform: translateY(-80%) translateX(-270%); 
+    }
+  }*/
+
+.Contact h3 {
+     font-size: 32px;
+}
+
+
+
+/* 全体のコンテナ */
+.Contactmain{
+    background: url('Picture/background.svg') no-repeat center center;
+    background-size: cover;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.contact-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-form-container img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/* フォームのスタイル */
+.contact-form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-form ul li {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 80px;
+}
+
+.contact-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.riyuu-slider {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto 20px;
+}
+
+.slider-image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 1s ease-in-out;
+  display: none;
+}
+
+.slider-image.active {
+  display: block;
+  opacity: 1;
+}
+
+.footer {
+    background-color: #f9f9f9;
+    padding: 20px 40px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    position: relative;
+    color: #333;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  
+  .footer-logo img {
+    max-width: 100px;
+  }
+  
+  .footer-info {
+    text-align: left;
+    margin-right: 700px;
+  }
+  
+  .footer-info p {
+    margin: 5px 0;
+  }
+  
+  .footer-info a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+
+
+  
+  
+  .back-to-top:hover {
+    background-color: #555;
+  }
+
+  .back-to-top {
+  position: absolute;
+  top: 10px; /* フッターの上端から10px */
+  right: 10px; /* フッターの右端から10px */
+  background-color: #056fdf;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #97c2f0;
+}
+  
+body{
+    overflow-x: hidden;
+}
+
+
+.nav1 ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+  }
+  
+  /* ハンバーガーメニューのスタイル */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .hamburger .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+  }
+/* ======================================*/
+
+/* ベーススタイルのレスポンシブ対応 */
+/* 375px以下でのレスポンシブ設定 */
+@media (max-width: 320px) {
+  h4{
+    font-size: 15px;
+  }
+  p{
+    font-size: 14px;
+  }
+    header{
+      position: fixed;
+    }
+    h1{
+      img{
+        width: 40px;
+        height: auto;
+      }
+    }
+    .mainvisual{
+     
+      h2{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 20px;
+        position: static;
+        padding-top: 60px;
+        color: #333;
+      }
+      img{
+        padding: 0 auto;
+        margin: 0 auto;
+      }
+    }
+    
+    .nav1 {
+      display: none; /* メニューを初期状態で非表示 */
+      width: 100%;
+      background-color: #fff; /* 背景色を設定 */
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100vh; /* メニューが画面いっぱいに広がる */
+      z-index: 10;
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(-100%); /* 初期状態で画面外に移動 */
+      position: fixed;
+    }
+  
+    .nav1.open {
+      display: block; /* メニューを表示 */
+      transform: translateX(0); /* メニューを画面内にスライドイン */
+    }
+  
+    .nav1 ul {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 60px;
+    }
+  
+    .nav1 ul li {
+      padding: 15px;
+    }
+
+    .small-text {
+      font-size: 0.8em; /* 小さめのフォントサイズ */
+  }
+  
+  
+    /* ハンバーガーメニューを表示 */
+    .hamburger {
+      display: flex;
+      position: absolute;
+      top: 25px;
+      right: 20px;
+      z-index: 20;
+      cursor: pointer;
+    }
+  
+    .hamburger .bar {
+      width: 30px;
+      height: 1px;
+      background-color: #333;
+      border-radius: 3px;
+      margin: 2px 0;
+    } 
+    .first-container{
+      background-color: #5C95FF;
+      background-color:  rgba(92, 149, 255, 0.1);
+      margin-top: -7px;
+    }
+      .komarigoto{
+        font-size: 15px;
+        margin: 0 auto;
+        padding-top: 30px;
+      }
+  .container{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .container1{
+    margin-bottom: 20px;
+  }
+  .container2{
+    margin-bottom: 20px;
+  }
+  
+.Features{
+  margin: 20px;
+}
+
+.Fcontainer {
+  grid-template-columns: 1fr; /* 1列構成 */
+  grid-template-areas:
+    "in1"
+    "in2"
+    "in3";
+}
+
+.Fcontainer1, .Fcontainer3 {
+  display: flex; /* Flexboxを保持 */
+  flex-direction: column; /* 縦並び */
+  margin-left: 5%; /* 左右の余白を調整 */
+  gap: 10px; /* 子要素間の間隔を調整 */
+  margin-top: 20px;
+}
+.Fcontainer2{
+  display: flex; /* Flexboxを保持 */
+  flex-direction: column; /* 縦並び */
+  margin-left: 5%; /* 左右の余白を調整 */
+  margin-bottom: 20px;
+  gap: 10px; /* 子要素間の間隔を調整 */
+  img{
+    order: 2;
+  }
+}
+
+.sankakanou, .otoku, .anshin {
+  width: 90%; /* 子要素の幅を広げる */
+  margin: 0 auto; /* 中央揃え */
+}
+
+.Fcontainer1 img, .Fcontainer2 img, .Fcontainer3 img {
+  width: 90%; /* 画像の幅を調整 */
+  margin: 0 auto; /* 中央揃え */
+}
+.Security{
+  margin-top: 50px;
+}
+.Scontainer1{
+  padding-top: 10px;
+  padding-bottom: 0px;
+  margin: 0 auto;
+  width: 61%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:"H4"
+                      "img1"
+                      "P1";
+  gap: 20px;
+  .h4dayo{
+    grid-area: H4;
+    padding-top: 20px;
+  }
+  .P1{
+    font-size: 14px;
+    grid-area: P1;
+  }
+  img{
+    grid-area: img1;
+    margin-top: -5%;
+  }
+}
+.Scontainer2{
+  padding-top: 10%;
+  padding-bottom: 0px;
+  margin: 0 auto;
+  bottom: 0;
+  width: 61%;
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-template-areas:"h4 "
+                      "img2"
+                      "P2";
+  gap: 20px;
+  .h4{
+    grid-area: h4;
+  }
+  .P2{
+    font-size: 14px;
+    grid-area: P2;
+  }
+  .img2{
+    grid-area: img2;
+    margin-top: -5%;
+  }
+}
+.Usage{
+  margin: 20px;
+}
+.Stepup{
+  margin: auto;
+}
+.Stepup > div {
+  width: 100%; /* 幅を100%にして縦並びにする */
+  flex-direction: row; /* 横並びに保つ */
+  align-items: center; /* 画像とテキストを中央揃え */
+  justify-content: center; /* 中央揃え */
+}
+
+.Stepup > div img {
+  margin-right: 10px; /* 画像とテキストの間にスペースを追加 */
+  margin-bottom: 0; /* 画像とテキストの間に縦のスペースをなくす */
+}
+
+.sankaku {
+  width: 50px; /* 三角形の画像サイズを小さくする */
+}
+
+.Stepup {
+  width: 100%; /* Stepup全体の幅を100%にする */
+}
+.riyuu {
+  padding: 8px 0; /* スクロール時の上下余白調整 */
+}
+
+.Features img{
+  width: 200px;
+}
+.kinou img{
+  width: 200px;
+}
+.Comparison img{
+  width: 300px;
+}
+.Reason img{
+  width: 200px;
+}
+.Usage img{
+  width: 200px;
+}
+.Contact img{
+  width: 250px;
+}
+
+.Contactmain {
+  /* 375px以下の画面幅で適用したいスタイルをここに記述 */
+  /* 例: フォントサイズを小さくする、要素の幅を調整するなど */
+  font-size: 14px;
+}
+
+.contact-form-container {
+  /* フォームコンテナの幅を調整するなど */
+  width: 100%;
+}
+
+/* その他の要素のスタイルも同様に調整 */
+.Contact img {
+  /* 画像の幅を調整するなど */
+  width: 50%;
+}
+.contact-form-container{
+  width: 80%;
+}
+
+.kinou{
+  margin-top: 50px;
+  padding: 0;
+}
+.eizou, .logohaichi, .sankasya {
+  display: flex;
+  flex-direction: column;
+}
+.column{
+  margin-top: -20px;
+}
+.sankasya{
+  margin-top: 20px;
+  text-align: center;
+}
+.column1{
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* 画像のサイズ調整 */
+img {
+max-width: 100%;
+}
+
+.Reason{
+  padding-top: 0;
+  margin-top: 50px;
+}
+
+.footer-content {
+  flex-direction: column; /* 375px以下では縦並び */
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo,
+.footer-info,
+.footer-bottom {
+  margin: 10px 0; /* 各要素間のマージン調整 */
+}
+
+.footer-info {
+  text-align: center; /* 375px以下では中央揃え */
+  margin-right: 0; /* 余計なマージンを削除 */
+}
+
+.Comparison{
+  margin-top: 50px;
+  padding-top: 0;
+}
+.Usage{
+  padding-top: 0;
+  margin-top: 50px;
+}
+
+.table-main{
+  width: 80%;
+  margin: auto;
+  table {
+      width: 100%;
+      margin: 80px 0 20px;
+      .indicator{
+          margin: 20px auto;
+      }
+  }
+}
+/* すべての列が順番に表示されるように変更 */
+th.company-btn,
+td:nth-child(4),
+td:nth-child(5) {
+  display: none;
+}
+
+th.company-btn:nth-child(3),
+td:nth-child(3) {
+  display: table-cell;
+}
+
+/* ヘッダーとインジケーターのスタイル調整 */
+th, td {
+  font-size: 14px;
+  padding: 10px;
+  word-break: break-word;
+}
+.indicator-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.indicator-dot.active {
+  background-color: #0077B6;
+}
+h3{
+  font-size: 16px!important;
+}
+}
+
